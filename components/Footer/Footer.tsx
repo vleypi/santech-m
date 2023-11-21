@@ -23,17 +23,17 @@ const Footer = () =>{
               </div>
                 <p className="mt-[20px]">ООО “САНТЕХКОМПЛЕКТ-М”</p>
                 <div className="mt-[20px]">
-                  <p>ИНН / КПП</p>
+                  <p className="max-md:text-center">ИНН / КПП</p>
                   <p>7716985351/771601001</p>
                 </div>
                 <div className="mt-[20px] text-[#bdbbbb] text-[13px]">
                   <p>santech-m.ru</p>
-                  <p>2023</p>
+                  <p className="max-md:text-center">2023</p>
                 </div>
             </div>
             <Nav />
             <div className="flex flex-col items-center mt-[90px] md:mt-[0px]">
-              <p className="mb-[15px]">info@santech-m.ru</p>
+              <p className="mb-[15px]">santechm@inbox.ru</p>
               <p className="mb-[15px]">+7 (903) 553-65-30</p>
               <button 
                     onClick={()=>router.push('/contacts')}

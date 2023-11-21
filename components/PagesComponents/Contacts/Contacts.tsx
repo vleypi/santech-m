@@ -14,7 +14,7 @@ const Contacts = () =>{
             <section className='flex flex-col lg:flex-row justify-between  my-[70px] '>
                 <div className='flex flex-col w-[90%] mb-[30px] lg:w-[30%]'>
                     <div className='mb-[20px]'>
-                        <p><span className='font-bold'>Почта:</span> info@santech-m.ru</p>
+                        <p><span className='font-bold'>Почта:</span> santechm@inbox.ru</p>
                         <p><span className='font-bold'>Телефон:</span> +7 (903) 553-65-30</p>
                     </div>
                     <div className='mb-[20px]'>
