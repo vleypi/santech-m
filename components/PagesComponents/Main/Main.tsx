@@ -10,6 +10,25 @@ import brands from '../../../public/img/brands.png'
 import Form from "@/components/Form/Form"
 import { useRef } from "react"
 
+import brand1 from '../../../public/brands/1.png'
+import brand2 from '../../../public/brands/2.png'
+import brand4 from '../../../public/brands/4.png'
+import brand5 from '../../../public/brands/5.png'
+import brand6 from '../../../public/brands/6.png'
+import brand7 from '../../../public/brands/7.png'
+import brand8 from '../../../public/brands/8.png'
+import brand9 from '../../../public/brands/9.png'
+import brand10 from '../../../public/brands/10.png'
+import brand11 from '../../../public/brands/11.png'
+import brand12 from '../../../public/brands/12.png'
+import brand13 from '../../../public/brands/13.png'
+import brand14 from '../../../public/brands/14.png'
+import brand15 from '../../../public/brands/15.png'
+import brand16 from '../../../public/brands/16.png'
+import brand17 from '../../../public/brands/17.png'
+import brand18 from '../../../public/brands/18.png'
+import brand19 from '../../../public/brands/19.png'
+
 
 const Main = () =>{
 
@@ -47,7 +66,62 @@ const Main = () =>{
                 <p className="md:text-[18px] xl:text-[22px] font-light mb-[25px]">Компания САНТЕХКОМПЛЕКТ-М имеет широкую сеть партнеров и поставщиков, что позволяет предлагать высококачественное оборудование от ведущих производителей. Мы всегда следим за последними технологическими тенденциями и предлагаем наиболее инновационные решения на рынке инженерных систем.</p>
                 <p className="md:text-[18px] xl:text-[22px] font-light mb-[50px]">При выполнении проектов наши сотрудники строго выполняют все нормы и стандарты безопасности. Мы имеем все необходимые сертификаты и лицензии, подтверждающие нашу способность качественно выполнять инженерные работы.</p>
                 <h3 className="text-center my-[50px] text-[22px] md:text-[22px] lg:text-[26px] xl:text-[30px]">Бренды партнеры</h3>
-                <Image alt={String(brands)} src={brands} width={1920} height={1080}/>
+                <div className="grid grid-cols-3 md:grid-cols-4 gap-10">
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand1} width={192} height={108}/>
+                    </div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand2} width={192} height={108}/>
+                    </div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand4} width={192} height={108}/>
+                    </div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand5} width={192} height={108}/>
+                    </div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand6} width={192} height={108}/>
+                    </div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand7} width={192} height={108}/>
+                    </div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand8} width={192} height={108}/>
+                    </div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand9} width={192} height={108}/>
+                    </div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand10} width={192} height={108}/>
+                    </ div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand11} width={192} height={108}/>
+                    </div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand12} width={192} height={108}/>
+                    </ div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand13} width={192} height={108}/>
+                    </ div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand14} width={192} height={108}/>
+                    </ div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand15} width={192} height={108}/>
+                    </ div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand16} width={192} height={108}/>
+                    </ div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand17} width={192} height={108}/>
+                    </ div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand18} width={192} height={108}/>
+                    </ div>
+                    <div className="flex items-center justify-center"> 
+                        <Image alt={String(brand1)} src={brand19} width={192} height={108}/>
+                    </ div>
+                </div>
             </section>
             <section className="my-[70px] w-[90%] xl:w-[1350px] m-auto">
                 <p className="md:text-[18px] xl:text-[22px] font-light mb-[50px]">Мы готовы предоставить полный спектр услуг - от консультации и разработки проекта до его реализации и последующего обслуживания. Наша главная цель - удовлетворение потребностей клиентов и установление долгосрочного сотрудничества, основанного на взаимном доверии.</p>

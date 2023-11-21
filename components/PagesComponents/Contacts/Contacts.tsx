@@ -1,13 +1,12 @@
 'use client'
 
 import Form from '@/components/Form/Form'
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps'
 import { useRef } from 'react'
 
 const Contacts = () =>{
 
-    const formRef = useRef<HTMLDivElement>(null)
-
-    const executeScroll = () => formRef.current?.scrollIntoView()    
+    const formRef = useRef<HTMLDivElement>(null)   
 
     return(
         <div className="w-[90%] xl:w-[1350px] mx-auto p-[20px] my-[20px] lg:mb-[100px]">
@@ -25,7 +24,13 @@ const Contacts = () =>{
                         <p><span className='font-bold'>Фактический адрес:</span> 129343, г. Москва, <br className='hidden lg:block'/> вн. тер. г. муниципальный округ<br className='hidden lg:block'/> Свиблово, Серебрякова проезд д. 11, к. 1,<br className='hidden lg:block'/> помещ. 12Н/2</p>
                     </div>
                 </div>
-                <div className='w-[100%] lg:w-[60%] h-[500px] bg-[#c7c6c6] animate-pulse flex items-center justify-center'>
+                
+                <div className='w-[100%] lg:w-[60%] h-[500px] bg-[#c7c6c6] flex items-center justify-center'>
+                    <YMaps query={{lang: 'ru_RU'}}>
+                        <Map defaultState={{ center: [55.8475502,37.6524458], zoom: 15 }} width={"100%"} height={"100%"}>
+                            <Placemark geometry={[55.8475502,37.6524458]} />
+                        </Map>
+                    </YMaps>
                 </div>
             </section>
             <Form formRef={formRef}/>
