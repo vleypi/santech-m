@@ -70,7 +70,7 @@ const Main = () =>{
                         text-center
                         xl:py-[120px] xl:w-[1350px]"
                     >
-                        <h1 className="text-[#fff] font-semibold text-[17px] md:text-[25px] lg:text-[27px] xl:text-[37px] mb-[25px] lg:mb-[40px] xl:mb-[50px]">Комплексные поставки <br className="md:hidden"/> инженерных систем <br /> по всей России</h1>
+                        <h1 className="text-[#fff] font-semibold text-[17px] md:text-[25px] lg:text-[27px] xl:text-[37px] mb-[25px] lg:mb-[40px] xl:mb-[50px]">Комплексные поставки <br className="md:hidden"/> оборудования и материалов <br /> для инженерных систем</h1>
                         <button onClick={executeScroll} className="bg-[#ffffff] font-semibold text-[10px] lg:text-[17px] xl:text-[20px] py-[7px] px-[18px] rounded-xl">Связаться с нами</button>
                     </div>
                 </div>
