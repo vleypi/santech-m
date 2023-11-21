@@ -27,9 +27,9 @@ const Products = () =>{
             <h1 className='text-center text-[20px] md:text-[25px] lg:text-[30px]'>Виды систем</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] gap-3 md:gap-5 lg:gap-8 xl:gap-10 mt-[70px]">
                 {products.map((product)=>(
-                    <div onClick={()=>router.push(`/products/${product.id}`)} className="flex relative items-center justify-center cursor-pointer transition duration-150 hover:scale-[1.01]  hover:opacity-100"> 
-                        <p className="text-center absolute z-10 text-[#fff] text-[20px] lg:text-[30px] font-semibold">{product.name}</p>
-                        <div className="absolute opacity-40 hover:opacity-0 w-[100%] h-[100%] bg-[#0f4b84] transition duration-150"></div>
+                    <div key={product.id+'_'+product.img.src} onClick={()=>router.push(`/products/${product.id}`)} className="flex group relative items-center justify-center cursor-pointer transition duration-150 hover:scale-[1.01]  hover:opacity-100"> 
+                        <div className="absolute opacity-40 group-hover:opacity-0 w-[100%] h-[100%] bg-[#0f4b84] transition duration-150"></div>
+                        <p className="text-center absolute z-10  text-[#fff] text-[20px] lg:text-[30px] font-semibold">{product.name}</p>
                         <Image alt={String(product.img)} src={product.img} className="w-[100%] h-[100%]" width={1920} height={1080}/>
                     </div>
                 ))}
