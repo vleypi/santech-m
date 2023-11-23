@@ -11,3 +11,4 @@ export const useNavStore = create<INav>((set,get) => ({
         opened: !state.opened
     }))
 }));
+

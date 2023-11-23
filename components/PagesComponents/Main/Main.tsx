@@ -29,17 +29,13 @@ import brand17 from '../../../public/brands/17.png'
 import brand18 from '../../../public/brands/18.png'
 import brand19 from '../../../public/brands/19.png'
 
-import system1 from '../../../public/systems/1.jpg'
-import system2 from '../../../public/systems/2.jpg'
-import system3 from '../../../public/systems/3.jpg'
-import system4 from '../../../public/systems/4.jpg'
-import system5 from '../../../public/systems/5.jpg'
+import product1 from '../../../public/products/1.jpg'
+import product2 from '../../../public/products/2.jpg'
+import product3 from '../../../public/products/3.jpg'
+import product4 from '../../../public/products/4.jpg'
+import product5 from '../../../public/products/5.jpg'
+import product6 from '../../../public/products/6.jpg'
 
-import mark1 from '../../../public/systems/11.jpg'
-import mark2 from '../../../public/systems/22.jpg'
-import mark3 from '../../../public/systems/33.jpg'
-import mark4 from '../../../public/systems/44.jpg'
-// import mark5 from '../../../public/systems/55.jpg'
 
 import { useRouter } from "next/navigation"
 
@@ -50,11 +46,32 @@ const Main = () =>{
     const executeScroll = () => formRef.current?.scrollIntoView()    
 
     const products = [
-        {img: system1, mark: mark1, id: 1, name: 'Пожаротушение'},
-        {img: system2, mark: mark2, id: 2, name: 'Отопление'},
-        {img: system3, mark: mark3, id: 3, name: 'Вентиляция и кондиционирование'},
-        {img: system4, mark: mark4, id: 4, name: 'Водоснабжение и водоотведение '},
-        {img: system5, mark: mark4,id: 5, name: 'Водоочистное оборудование'},
+        {img: product1, id: 1, name: 'Пожаротушение'},
+        {img: product2, id: 2, name: 'Отопление'},
+        {img: product3, id: 3, name: 'Вентиляция и кондиционирование'},
+        {img: product4, id: 4, name: 'Водоснабжение и водоотведение '},
+        {img: product5, id: 5, name: 'Водоочистное оборудование'},
+        {img: product6, id: 6, name: 'Проектирование и сервисное обслуживание'}
+    ]
+
+    const brands = [
+        {img: brand13, id: 13},
+        {img: brand2, id: 2},
+        {img: brand5, id: 5},
+        {img: brand1, id: 1},
+        {img: brand4, id: 4},
+        {img: brand6, id: 6},
+        {img: brand7, id: 7},
+        {img: brand8, id: 8},
+        {img: brand9, id: 9},
+        {img: brand10, id: 10},
+        {img: brand11, id: 11},
+        {img: brand12, id: 12},
+        {img: brand14, id: 14},
+        {img: brand15, id: 15},
+        {img: brand16, id: 16},
+        {img: brand18, id: 18},
+        {img: brand19, id: 19},
     ]
 
     const router = useRouter()
@@ -82,8 +99,7 @@ const Main = () =>{
                     {products.map((product)=>(
                         <div key={product.id+'_'+product.img.src} onClick={()=>router.push(`/products/${product.id}`)} className="flex group relative items-center justify-center cursor-pointer transition duration-150 hover:scale-[1.01]  hover:opacity-100"> 
                             <div className="rounded-2xl absolute opacity-40 md:group-hover:opacity-0 w-[100%] h-[100%] bg-[#0f4b84] transition duration-150"></div>
-                            {/* <Image alt={String(product.mark)} src={product.mark} className="w-[100%] h-[100%] rounded-2xl absolute" width={192} height={1192}/> */}
-                            <p className="text-center absolute z-10  text-[#fff] text-[20px] xl:text-[30px] font-semibold">{product.name}</p>
+                            <p className="text-center absolute z-10  text-[#fff] text-[20px] xl:text-[25px] font-semibold">{product.name}</p>
                             <Image alt={String(product.img)} src={product.img} className="w-[100%] h-[100%] rounded-2xl" width={1920} height={1080}/>
                         </div>
                     ))}
@@ -94,60 +110,11 @@ const Main = () =>{
                 <p className="md:text-[18px] xl:text-[22px] font-light mb-[50px]">При выполнении проектов наши сотрудники строго выполняют все нормы и стандарты безопасности. Мы имеем все необходимые сертификаты и лицензии, подтверждающие нашу способность качественно выполнять инженерные работы.</p>
                 <h3 className="text-center my-[50px] text-[22px] md:text-[22px] lg:text-[26px] xl:text-[30px]">Бренды партнеры</h3>
                 <div className="grid grid-cols-3 md:grid-cols-4 gap-10">
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand1} width={192} height={108}/>
-                    </div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand2} width={192} height={108}/>
-                    </div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand4} width={192} height={108}/>
-                    </div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand5} width={192} height={108}/>
-                    </div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand6} width={192} height={108}/>
-                    </div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand7} width={192} height={108}/>
-                    </div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand8} width={192} height={108}/>
-                    </div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand9} width={192} height={108}/>
-                    </div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand10} width={192} height={108}/>
-                    </ div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand11} width={192} height={108}/>
-                    </div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand12} width={192} height={108}/>
-                    </ div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand13} width={192} height={108}/>
-                    </ div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand14} width={192} height={108}/>
-                    </ div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand15} width={192} height={108}/>
-                    </ div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand16} width={192} height={108}/>
-                    </ div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand17} width={192} height={108}/>
-                    </ div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand18} width={192} height={108}/>
-                    </ div>
-                    <div className="flex items-center justify-center"> 
-                        <Image alt={String(brand1)} src={brand19} width={192} height={108}/>
-                    </ div>
+                    {brands.map((brand)=>(
+                        <div className="flex items-center justify-center" key={brand.img.src}> 
+                            <Image alt={String(brand.img.src)} src={brand.img} width={192} height={108}/>
+                        </div>
+                    ))}
                 </div>
             </section>
             <section className="my-[70px] w-[90%] xl:w-[1350px] m-auto">

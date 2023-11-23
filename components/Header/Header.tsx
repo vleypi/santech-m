@@ -12,9 +12,7 @@ import { usePathname } from "next/navigation"
 
 const Header = () =>{
 
-    const {opened,setOpened} = useNavStore(state => state)
-
-    const pathname = usePathname()
+    const {setOpened} = useNavStore(state => state)
 
     return(
         <header className={`border-b-2 border-b-[#fff] bg-[#0f4b84]  w-full z-[100]`}>
@@ -26,7 +24,7 @@ const Header = () =>{
             '>
               <div>
                 <Link href={'/'} className="flex items-center">
-                  <Image alt="green-chem" className="w-[40px] md:w-[50px] lg:w-[60px] xl:w-[70px]" width={50} src={logo}/>
+                  <Image alt="green-chem" className="w-[40px] md:w-[50px] lg:w-[60px] xl:w-[70px]" width={200} src={logo}/>
                   <div className='flex flex-col text-[#fff]'>
                     <div className='mx-[15px] mb-[5px] flex items-center'>
                       <AiOutlineMail className="mr-[5px]"/>

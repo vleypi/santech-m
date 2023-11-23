@@ -9,9 +9,9 @@ const Contacts = () =>{
     const formRef = useRef<HTMLDivElement>(null)   
 
     return(
-        <div className="w-[90%] xl:w-[1350px] mx-auto p-[20px] my-[20px] lg:mb-[100px]">
+        <div className="w-[90%] xl:w-[1350px] mx-auto p-[20px] my-[50px] max-md:mt-[10px] lg:mb-[100px]">
             <h1 className='text-center text-[20px] md:text-[25px] lg:text-[30px]'>Контакты</h1>
-            <section className='flex flex-col lg:flex-row justify-between  my-[70px] '>
+            <section className='flex flex-col lg:flex-row justify-between  my-[70px] max-md:mt-[30px] '>
                 <div className='flex flex-col w-[90%] mb-[30px] lg:w-[30%]'>
                     <div className='mb-[20px]'>
                         <p><span className='font-bold'>Почта:</span> santechm@inbox.ru</p>

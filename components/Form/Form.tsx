@@ -21,7 +21,7 @@ export enum Status {
 }
 
 type Props = {
-    formRef: React.RefObject<HTMLDivElement>
+    formRef?: React.RefObject<HTMLDivElement>
 }
 
 const Form = ({formRef}: Props) =>{
@@ -39,7 +39,7 @@ const Form = ({formRef}: Props) =>{
         try{
             setBtnStatus("SENDING")
 
-            if(form.email && form.email && form.phone ){
+            if(form.email && form.email && form.phone && form.text){
                 axios.post('/api/contact', {
                     name: form.name,
                     email: form.email,
@@ -76,6 +76,7 @@ const Form = ({formRef}: Props) =>{
                 <input max={20} name='name' placeholder='Имя' onChange={formHandler} className="border-[1px] px-[15px] py-[10px] rounded-xl outline-none  "/>
                 <input max={20} name='email' placeholder='e-mail' onChange={formHandler} className="border-[1px] px-[15px] py-[10px] rounded-xl outline-none "/>
                 <input max={20} name='phone' placeholder='Телефон' onChange={formHandler} className="border-[1px] px-[15px] py-[10px] rounded-xl outline-none "/>
+                <input max={400} name='text' placeholder='Сообщение' onChange={formHandler} className="border-[1px] px-[15px] py-[10px] rounded-xl outline-none "/>
             </div>
             
             
