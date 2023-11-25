@@ -5,7 +5,7 @@ import Nav from "../Nav/Nav"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 
-import logo from '../../public/img/logo.svg'
+import logo from '../../public/img/logo.png'
 
 
 const Footer = () =>{
@@ -18,7 +18,7 @@ const Footer = () =>{
             <div className="flex flex-col items-center md:block">
               <div>
                 <Link href={'/'} className="flex items-center">
-                  <Image alt="green-chem" width={50} src={logo}/>
+                  <Image alt="green-chem" className="w-[50px]" width={200} src={logo}/>
                 </Link>
               </div>
                 <p className="mt-[20px]">ООО “САНТЕХКОМПЛЕКТ-М”</p>

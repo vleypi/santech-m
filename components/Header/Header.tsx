@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import logo from '../../public/img/logo.svg'
+import logo from '../../public/img/logo.png'
 import Nav from "../Nav/Nav"
 import {AiOutlineMenu} from 'react-icons/ai'
 import {AiOutlineMail} from 'react-icons/ai'

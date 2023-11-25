@@ -28,6 +28,10 @@ import brand16 from '../../../public/brands/16.png'
 import brand17 from '../../../public/brands/17.png'
 import brand18 from '../../../public/brands/18.png'
 import brand19 from '../../../public/brands/19.png'
+import brand20 from '../../../public/brands/20.png'
+import brand21 from '../../../public/brands/21.png'
+import brand22 from '../../../public/brands/22.png'
+
 
 import product1 from '../../../public/products/1.jpg'
 import product2 from '../../../public/products/2.jpg'
@@ -72,6 +76,9 @@ const Main = () =>{
         {img: brand16, id: 16},
         {img: brand18, id: 18},
         {img: brand19, id: 19},
+        {img: brand20, id: 20},
+        {img: brand21, id: 21},
+        {img: brand22, id: 22},
     ]
 
     const router = useRouter()
@@ -109,10 +116,10 @@ const Main = () =>{
                 <p className="md:text-[18px] xl:text-[22px] font-light mb-[25px]">Компания САНТЕХКОМПЛЕКТ-М имеет широкую сеть партнеров и поставщиков, что позволяет предлагать высококачественное оборудование от ведущих производителей. Мы всегда следим за последними технологическими тенденциями и предлагаем наиболее инновационные решения на рынке инженерных систем.</p>
                 <p className="md:text-[18px] xl:text-[22px] font-light mb-[50px]">При выполнении проектов наши сотрудники строго выполняют все нормы и стандарты безопасности. Мы имеем все необходимые сертификаты и лицензии, подтверждающие нашу способность качественно выполнять инженерные работы.</p>
                 <h3 className="text-center my-[50px] text-[22px] md:text-[22px] lg:text-[26px] xl:text-[30px]">Бренды партнеры</h3>
-                <div className="grid grid-cols-3 md:grid-cols-4 gap-10">
+                <div className="grid grid-cols-4 md:grid-cols-5 gap-10">
                     {brands.map((brand)=>(
                         <div className="flex items-center justify-center" key={brand.img.src}> 
-                            <Image alt={String(brand.img.src)} src={brand.img} width={192} height={108}/>
+                            <Image alt={String(brand.img.src)} src={brand.img} width={150} height={80}/>
                         </div>
                     ))}
                 </div>
