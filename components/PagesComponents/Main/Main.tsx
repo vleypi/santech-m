@@ -1,12 +1,7 @@
 'use client'
 
 import Image from "next/image"
-import m1 from '../../../public/img/m1.jpg'
-import m2 from '../../../public/img/m2.svg'
-import m3 from '../../../public/img/m3.svg'
-import m4 from '../../../public/img/m4.svg'
-import m5 from '../../../public/img/m5.svg'
-import brands from '../../../public/img/brands.png'
+import main2 from '../../../public/img/main2.png'
 import Form from "@/components/Form/Form"
 import { useRef } from "react"
 
@@ -85,19 +80,16 @@ const Main = () =>{
 
     return(
         <>
-            <section className="w-full relative">
-                <Image alt={m1.src} className="w-full xl:h-[80vh]" width={1920} height={1080} src={m1}/>
-                <div className="absolute w-full h-full flex flex-col items-center top-0 bg-[#0f4c847b]">
-                    <div className="
-                        w-[90%] 
-                        m-auto
-                        text-center
-                        xl:py-[120px] xl:w-[1350px]"
-                    >
-                        <h1 className="text-[#fff] font-semibold text-[17px] md:text-[25px] lg:text-[27px] xl:text-[37px] mb-[25px] lg:mb-[40px] xl:mb-[50px]">Комплексные поставки <br className="md:hidden"/> оборудования и материалов <br /> для инженерных систем</h1>
-                        <button onClick={executeScroll} className="bg-[#ffffff] font-semibold text-[10px] lg:text-[17px] xl:text-[20px] py-[7px] px-[18px] rounded-xl">Связаться с нами</button>
-                    </div>
+            <section className="
+                flex justify-between flex-col py-[50px] w-[90%] 
+                m-auto md:flex-row md:items-center
+                xl:w-[1350px]
+            ">
+                <div className="font-normal ">
+                    <h3 className="text-[23px] lg:text-[27px] xl:text-[42px]">Комплексные поставки <br /> для водоочистки <br /> оборудования и материалов <br /> для инженерных систем</h3>
+                    <button onClick={executeScroll} className="font-semibold text-[white] mt-[30px] text-[10px] lg:text-[17px] xl:text-[20px] py-[7px] px-[18px] rounded-xl bg-[#0f4b84]">Связаться с нами</button>
                 </div>
+                <Image className="w-[100%] md:w-[33%] lg:w-[500px] rounded-2xl" alt={main2.src} src={main2} width={500} height={500}/>
             </section>
             <section className="my-[70px] w-[90%] xl:w-[1350px] m-auto">
                 <p className="md:text-[18px] xl:text-[22px] font-light mb-[25px]">Компания САНТЕХКОМПЛЕКТ-М занимается предоставлением качественных и надежных инженерных решений для различных отраслей. Мы предлагаем широкий спектр услуг, включая проектирование, поставку, монтаж и обслуживание систем водоснабжения,  водоотведения, вентиляции, кондиционирования, отопления и пожаротушения.</p>
