@@ -87,7 +87,7 @@ const Main = () =>{
             ">
                 <div className="font-normal ">
                     <h3 className="text-[23px] lg:text-[27px] xl:text-[42px]">Комплексные поставки <br /> для водоочистки <br /> оборудования и материалов <br /> для инженерных систем</h3>
-                    <button onClick={executeScroll} className="font-semibold text-[white] mt-[30px] text-[10px] lg:text-[17px] xl:text-[20px] py-[7px] px-[18px] rounded-xl bg-[#0f4b84]">Связаться с нами</button>
+                    <button onClick={executeScroll} className="font-semibold text-[white] my-[30px] text-[10px] lg:text-[17px] xl:text-[20px] py-[7px] px-[18px] rounded-xl bg-[#0f4b84]">Связаться с нами</button>
                 </div>
                 <Image className="w-[100%] md:w-[33%] lg:w-[500px] rounded-2xl" alt={main2.src} src={main2} width={500} height={500}/>
             </section>
