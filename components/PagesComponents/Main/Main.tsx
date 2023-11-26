@@ -84,9 +84,10 @@ const Main = () =>{
                 flex justify-between flex-col py-[50px] w-[90%] 
                 m-auto md:flex-row md:items-center
                 xl:w-[1350px]
+                max-lg:pb-[0px]
             ">
                 <div className="font-normal ">
-                    <h3 className="text-[23px] lg:text-[27px] xl:text-[42px]">Комплексные поставки <br /> для водоочистки <br /> оборудования и материалов <br /> для инженерных систем</h3>
+                    <h3 className="text-[23px] lg:text-[27px] xl:text-[35px]">Комплексные поставки <br /> для водоочистки <br /> оборудования и материалов <br /> для инженерных систем</h3>
                     <button onClick={executeScroll} className="text-[white] my-[30px] text-[10px] lg:text-[17px] xl:text-[20px] py-[7px] px-[18px] rounded-xl bg-[#0f4b84]">Связаться с нами</button>
                 </div>
                 <Image className="w-[100%] md:w-[33%] lg:w-[500px] rounded-2xl" alt={main2.src} src={main2} width={500} height={500}/>
