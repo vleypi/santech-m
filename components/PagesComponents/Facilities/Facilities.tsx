@@ -29,7 +29,7 @@ export const Facilities = () =>{
             <h1 className='text-center text-[20px] md:text-[25px] lg:text-[30px]'>Наши объекты</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 w-[100%] gap-3 md:gap-5 lg:gap-8 xl:gap-10 max-md:mt-[30px] md:mt-[70px]">
                 {facilities.map((facility)=>(
-                    <div className="flex flex-col relative items-center justify-center cursor-pointer transition"> 
+                    <div className="flex flex-col relative items-center justify-center cursor-pointer transition" key={facility.id + "_" + facility.img.src}> 
                         <Image alt={String(facility.img.src)} src={facility.img} className="w-[100%] h-[100%] rounded-2xl shadow-2xl" width={1920} height={1080}/>
                         <p className="text-center text-[#000] text-[20px] xl:text-[25px] mt-[20px] font-normal">{facility.name}</p>
                     </div>
