@@ -22,6 +22,10 @@ const Nav = () =>{
         {
             href: '/products',
             name: 'Виды систем'
+        },
+        {
+            href: '/facilities',
+            name: 'Наши объекты'
         }
     ]
 
@@ -36,7 +40,7 @@ const Nav = () =>{
     ))
 
     return(
-        <nav className="hidden md:flex md:h-full md:items-center">
+        <nav className="hidden lg:flex md:h-full md:items-center">
             {divLinks}
         </nav>
     )

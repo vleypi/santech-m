@@ -37,7 +37,7 @@ const Header = () =>{
                   </div>
                 </Link>
               </div>
-              <AiOutlineMenu className="block w-[30px] h-[30px] md:hidden text-[white]" onClick={setOpened} />
+              <AiOutlineMenu className="block w-[30px] h-[30px] lg:hidden text-[white]" onClick={setOpened} />
               <Nav />       
             </div>
         </header>
