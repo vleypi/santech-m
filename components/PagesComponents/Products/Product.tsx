@@ -1,13 +1,32 @@
 import Image from "next/image"
-import { ImageProps } from "next/image"
+
 import Form from "@/components/Form/Form"
 
+import img1 from '../../../public/products/1.jpg'
+import img2 from '../../../public/products/2.jpg'
+import img3 from '../../../public/products/3.jpg'
+import img4 from '../../../public/products/4.jpg'
+import img5 from '../../../public/products/5.jpg'
+import img6 from '../../../public/products/6.jpg'
 
-const Products = ({product}) =>{
+type Props = {
+    product: {
+        id: number,
+        h1: string,
+        texts: {
+            p: string
+        }[]
+    }
+}
+
+const Products = ({product}: Props) =>{
+
+    const images = [img1,img2,img3,img4,img5,img6]
+
     return(
                 <>
                     <section className="w-full relative">
-                        <Image alt={product.img.src} className="w-full xl:h-[80vh]" width={1920} height={1080} src={product.img}/>
+                        <Image alt={images[product.id-1].src} className="w-full xl:h-[80vh]" width={1920} height={1080} src={images[product.id-1]}/>
                         <div className="absolute w-full h-full flex flex-col items-center top-0 bg-[#0f4c847b]">
                             <div className="
                                 w-[90%] 

@@ -1,8 +1,5 @@
 import Product from '@/components/PagesComponents/Products/Product'
 
-import img from '../../../public/products/1.jpg'
-
-
 export function generateMetadata(){
 
     const product = {  
@@ -24,7 +21,6 @@ export default function Home() {
 
     const product = {   
         id: 1,
-        img,
         h1: 'Пожаротушение', 
         texts: [
             {p: 'Системы пожаротушения являются неотъемлемой частью противопожарной безопасности в любом здании. Они предназначены для предотвращения распространения пожара, защиты жизни и имущества.'},

@@ -1,6 +1,5 @@
 import Product from '@/components/PagesComponents/Products/Product'
 
-import img from '../../../public/products/3.jpg'
 
 
 export function generateMetadata(){
@@ -18,7 +17,6 @@ export default function Home() {
 
     const product = {
         id: 3,
-        img,
         h1: 'Вентиляция и кондиционирование',
         texts: [
             {p: 'Компания САНТЕХКОМПЛЕКТ-М имеет большой опыт работы в поставке и установке систем вентиляции и кондиционирования. Мы предлагаем широкий ассортимент технологических решений, которые удовлетворят потребности клиентов и позволят обеспечить комфортное и здоровое воздушное пространство в помещениях.'},

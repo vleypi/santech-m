@@ -1,7 +1,5 @@
 import Product from '@/components/PagesComponents/Products/Product'
 
-import img from '../../../public/products/2.jpg'
-
 
 export function generateMetadata(){
 
@@ -18,7 +16,6 @@ export default function Home() {
 
     const product = {
         id: 2,
-        img,
         h1: 'Отопление',
         texts: [
             {p: 'Системы отопления играют важную роль в современном строительстве и обеспечивают комфортное проживание или работу в здания в холодное время. Они состоят из комплекса элемента, а именно из котла, радиаторов, трубопроводов, насосов и терморегуляторов, которые работают совместно для обеспечения правильного функционирования системы отопления.'},
