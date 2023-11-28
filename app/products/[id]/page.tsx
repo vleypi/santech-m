@@ -41,9 +41,9 @@ export function generateMetadata({params: {id}}: Props){
     ]
 
     return{
-        title: products[Number(id)-1].title,
-        description: `Виды систем - ${products[Number(id)-1].title}. ${products[Number(id)-1].p}`,
-        keywords: `products[Number(id)-1].title, САНТЕХКОМПЛЕКТ-М, Комплексные поставки оборудования и материалов для инженерных систем по всей России, Опросные листы инженерного оборудования, ИНН / КПП 7716985351/771601001, +7 (903) 553-65-30, santechm@inbox.ru, santech-m.ru`
+        title: products[Number(id)-1]?.title ? products[Number(id)-1]?.title : '404',
+        description: `Виды систем - ${products[Number(id)-1]?.title ? products[Number(id)-1]?.title : ''}. ${products[Number(id)-1]?.p ? products[Number(id)-1]?.p :''}`,
+        keywords: `${products[Number(id)-1]?.title ? products[Number(id)-1]?.title : ''}, САНТЕХКОМПЛЕКТ-М, Комплексные поставки оборудования и материалов для инженерных систем по всей России, Опросные листы инженерного оборудования, ИНН / КПП 7716985351/771601001, +7 (903) 553-65-30, santechm@inbox.ru, santech-m.ru`
     }
 }
 

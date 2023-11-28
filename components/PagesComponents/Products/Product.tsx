@@ -17,8 +17,6 @@ const Products = () =>{
 
     const id = Number(useParams().id)-1
 
-    const router = useRouter()
-
     const products = [
         {   id: 1,
             img: product1,
