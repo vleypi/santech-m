@@ -9,6 +9,7 @@ import product3 from '../../../public/products/3.jpg'
 import product4 from '../../../public/products/4.jpg'
 import product5 from '../../../public/products/5.jpg'
 import product6 from '../../../public/products/6.jpg'
+import Link from "next/link"
 
 import Form from "@/components/Form/Form"
 
@@ -86,12 +87,6 @@ const Products = () =>{
         }
     ]
 
-    useEffect(()=>{
-        if(!products[id]){
-            router.replace('/not-found')
-        }
-    },[id,products])
-
     return(
         <>
             {products[id]?.h1 ?
@@ -118,8 +113,10 @@ const Products = () =>{
                         </div>
                     </section>
                 </> :
-                <div className="w-full h-[100vh] bg-[#ebebeb] animate-pulse">
-
+                <div className="w-full h-screen absolute flex flex-col items-center justify-center bg-[#ffffff] text-[black]">
+                    <h1 className="text-[100px]">404</h1>
+                    <p className="text-center mb-[50px] font-semibold">Такой страницы не существует </p>
+                    <Link href={'/'} className="bg-[#0f4b84] text-[#ffffff] px-[30px] py-[10px] rounded">На главную</Link>
                 </div>
             }
         </>

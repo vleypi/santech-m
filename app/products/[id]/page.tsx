@@ -50,7 +50,7 @@ export function generateMetadata({params: {id}}: Props){
 export default function Home() {
     return (
         <main className='w-full'>
-        <Product />
+            <Product />
         </main>
     )
 }
