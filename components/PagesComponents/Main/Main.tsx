@@ -90,7 +90,7 @@ const Main = () =>{
                     <h3 className="text-[23px] lg:text-[27px] xl:text-[35px]">Комплексные поставки <br /> оборудования и материалов <br /> для инженерных систем <br /> и водоочистки</h3>
                     <button onClick={executeScroll} className="text-[white] my-[30px] text-[10px] lg:text-[17px] xl:text-[20px] py-[7px] px-[18px] rounded-xl bg-[#0f4b84]">Связаться с нами</button>
                 </div>
-                <Image className="w-[100%] md:w-[33%] lg:w-[500px] rounded-2xl" alt={main2.src} src={main2} width={500} height={500}/>
+                <Image className="w-[100%] h-auto md:w-[33%] lg:w-[500px] rounded-2xl" alt={main2.src} src={main2} width={500} height={500}/>
             </section>
             <section className="my-[70px] w-[90%] xl:w-[1350px] m-auto">
                 <p className="md:text-[18px] xl:text-[22px] font-light mb-[25px]">Компания САНТЕХКОМПЛЕКТ-М занимается поставками качественных и надежных инженерных решений для различных отраслей. Мы предлагаем широкий спектр услуг, включая проектирование, поставку, монтаж и обслуживание систем водоснабжения,  водоотведения, вентиляции, кондиционирования, отопления, пожаротушения и систем водоочистки..</p>
@@ -100,7 +100,7 @@ const Main = () =>{
                         <div key={product.id+'_'+product.img.src} onClick={()=>router.push(`/products/${product.id}`)} className="flex group relative items-center justify-center cursor-pointer transition duration-150 hover:scale-[1.01]  hover:opacity-100"> 
                             <div className="rounded-2xl absolute opacity-40 md:group-hover:opacity-0 w-[100%] h-[100%] bg-[#0f4b84] transition duration-150"></div>
                             <p className="text-center absolute z-10  text-[#fff] text-[20px] xl:text-[25px] font-semibold">{product.name}</p>
-                            <Image alt={String(product.img)} src={product.img} className="w-[100%] h-[100%] rounded-2xl" width={1920} height={1080}/>
+                            <Image alt={String(product.img)} src={product.img} className="w-[100%] h-[100%] rounded-2xl" width={500} height={300}/>
                         </div>
                     ))}
                 </div>
@@ -112,7 +112,7 @@ const Main = () =>{
                 <div className="grid grid-cols-4 md:grid-cols-5 gap-10">
                     {brands.map((brand)=>(
                         <div className="flex items-center justify-center" key={brand.img.src}> 
-                            <Image alt={String(brand.img.src)} src={brand.img} width={150} height={80}/>
+                            <Image alt={String(brand.img.src)} className="w-auto h-auto" src={brand.img} width={150} height={80}/>
                         </div>
                     ))}
                 </div>

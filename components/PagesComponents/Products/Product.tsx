@@ -90,7 +90,7 @@ const Products = () =>{
         if(!products[id]){
             router.replace('/not-found')
         }
-    },[id])
+    },[id,products])
 
     return(
         <>
