@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image"
-import sfa from '../../../public/img/sfa.png'
-import wilo from '../../../public/img/wilo.png'
+import sfa from '../../../public/img/sfa.jpg'
+import wilo from '../../../public/img/wilo.jpg'
 
 import Form from "@/components/Form/Form"
 
@@ -14,7 +14,7 @@ export const Questionnaires = () =>{
             <section className='flex flex-col items-center md:flex-row justify-around my-[70px] max-md:mt-[30px] '>
                 <div className="flex flex-col items-center ">
                     <h2 className='text-[16px] md:text-[19px] lg:text-[22px] font-semibold mb-[20px]'>Опросный лист объекта/проекта</h2>
-                    <Image width={404} height={524} className="border-solid border-[1px] border-black" height={524} alt="sfa лист" src={sfa}/>
+                    <Image width={404} height={524} className="border-solid border-[1px] border-black" alt="sfa лист" src={sfa}/>
                     <a className="mt-[30px] bg-[#0f4b84] text-[#fff] px-[20px] py-[5px] text-[16px] rounded-xl" href="/SFA2.xlsx" download="SFA">Скачать</a>
                 </div>
                 <div className="flex flex-col items-center max-md:mt-[50px]">
