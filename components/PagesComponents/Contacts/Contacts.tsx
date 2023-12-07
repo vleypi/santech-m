@@ -21,9 +21,6 @@ const Contacts = () =>{
                         <p><span className='font-bold'>Юридический адрес:</span> 129343, г. Москва, <br className='hidden lg:block'/> вн. тер. г. муниципальный округ<br className='hidden lg:block'/> Свиблово, Серебрякова проезд д. 11, к. 1,<br className='hidden lg:block'/> помещ. 12Н/2</p>
                     </div>
                     <div className='mb-[20px]'>
-                        <p><span className='font-bold'>Фактический адрес:</span> 129343, г. Москва, <br className='hidden lg:block'/> вн. тер. г. муниципальный округ<br className='hidden lg:block'/> Свиблово, Серебрякова проезд д. 11, к. 1,<br className='hidden lg:block'/> помещ. 12Н/2</p>
-                    </div>
-                    <div className='mb-[20px]'>
                         <p><span className='font-bold'>Генеральный директор: </span> Красняк Евгений Александрович  <br /> +7 (903) 553-65-30 <span /></p>
                     </div>
                     <div>
