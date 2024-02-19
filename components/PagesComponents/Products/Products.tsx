@@ -8,6 +8,7 @@ import product3 from '../../../public/products/3.jpg'
 import product4 from '../../../public/products/4.jpg'
 import product5 from '../../../public/products/5.jpg'
 import product6 from '../../../public/products/6.jpg'
+import product7 from '../../../public/products/7.jpg'
 
 import { useRouter } from "next/navigation"
 
@@ -21,7 +22,8 @@ const Products = () =>{
         {img: product3, id: 3, name: 'Вентиляция и кондиционирование'},
         {img: product4, id: 4, name: 'Водоснабжение и водоотведение '},
         {img: product5, id: 5, name: 'Водоочистное оборудование'},
-        {img: product6, id: 6, name: 'Проектирование и сервисное обслуживание'}
+        {img: product6, id: 6, name: 'Проектирование и сервисное обслуживание'},
+        {img: product7, id: 7, name: 'Мебель'},
     ]
 
     return(

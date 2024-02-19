@@ -28,7 +28,7 @@ const Footer = () =>{
                 </div>
                 <div className="mt-[20px] text-[#bdbbbb] text-[13px]">
                   <p>santech-m.ru</p>
-                  <p className="max-md:text-center">2023</p>
+                  <p className="max-md:text-center">2024</p>
                 </div>
             </div>
             <Nav />

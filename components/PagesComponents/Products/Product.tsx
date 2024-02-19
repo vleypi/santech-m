@@ -8,6 +8,7 @@ import img3 from '../../../public/products/3.jpg'
 import img4 from '../../../public/products/4.jpg'
 import img5 from '../../../public/products/5.jpg'
 import img6 from '../../../public/products/6.jpg'
+import img7 from '../../../public/products/7.jpg'
 
 type Props = {
     product: {
@@ -21,7 +22,7 @@ type Props = {
 
 const Products = ({product}: Props) =>{
 
-    const images = [img1,img2,img3,img4,img5,img6]
+    const images = [img1,img2,img3,img4,img5,img6,img7]
 
     return(
                 <>
