@@ -30,8 +30,8 @@ const Contacts = () =>{
                 
                 <div className='w-[100%] lg:w-[60%] h-[500px] bg-[#c7c6c6] flex items-center justify-center'>
                     <YMaps query={{lang: 'ru_RU'}}>
-                        <Map defaultState={{ center: [55.8475502,37.6524458], zoom: 15 }} width={"100%"} height={"100%"}>
-                            <Placemark geometry={[55.8475502,37.6524458]} />
+                        <Map defaultState={{ center: [55.728540, 37.621390], zoom: 17 }} width={"100%"} height={"100%"}>
+                            <Placemark geometry={[55.728540, 37.621390]} />
                         </Map>
                     </YMaps>
                 </div>
