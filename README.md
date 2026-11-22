@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# santech m
 
-## Getting Started
+Сайт компании «Сантехкомплект-М», которая поставляет оборудование и материалы для инженерных систем по всей России.
 
-First, run the development server:
+## О приложении
+
+Сайт открывается в браузере, онлайн он доступен по адресу https://santech-m.vercel.app. На главной странице собраны направления компании, бренды-партнёры и форма обратной связи. Направлений семь: пожаротушение, отопление, вентиляция и кондиционирование, водоснабжение и водоотведение, водоочистное оборудование, проектирование и сервисное обслуживание, мебель. У каждого есть своя страница.
+
+В разделе «Объекты» показаны выполненные проекты в Москве, Московской области и Санкт-Петербурге. В разделе «Опросные листы» можно скачать листы для подбора оборудования в формате Excel и отправить заполненный лист через форму. Страница контактов содержит карту и ту же форму.
+
+Форма отправляет сообщение на почту компании через SMTP. Адрес и пароль почты задаются переменными окружения `EMAIL` и `PASS` в файле `.env`.
+
+## Как запустить
+
+Потребуются Git и Node.js 20 или новее.
 
 ```bash
+git clone https://github.com/vleypi/santech-m.git
+cd santech-m
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+После запуска сайт доступен по адресу http://localhost:3000. Чтобы форма отправляла письма, в корне нужен файл `.env` с переменными `EMAIL` и `PASS`. Команда `npm run build` собирает production-версию.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Структура
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+santech-m/
+├── app/
+│   ├── page.tsx           главная
+│   ├── products/          направления и их страницы
+│   ├── facilities/        объекты
+│   ├── questionnaires/    опросные листы
+│   ├── contacts/          контакты и карта
+│   ├── api/contact/       отправка формы на почту
+│   └── layout.tsx         общий макет и метаданные
+├── components/            шапка, подвал, навигация, форма и блоки страниц
+├── store/                 состояние меню на Zustand
+├── public/                изображения и опросные листы в Excel
+├── next.config.js         настройки Next.js
+└── package.json           зависимости и скрипты
+```
